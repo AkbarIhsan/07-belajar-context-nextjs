@@ -1,15 +1,8 @@
 'use client';
 
-import { Main } from "next/document";
+import MyApp from "./component/atoms/myapp";
 import MainPage from "./component/templates/main_page";
-import ProfilePage from "./component/templates/profile_page";
 
 export default function Home(){
-  return(
-    <>
-      <MainPage/>
-      <hr />
-      <ProfilePage/>
-    </>
-  );
+  return <MyApp Component={MainPage} pageProps={undefined}/>
 }
